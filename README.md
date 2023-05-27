@@ -33,19 +33,20 @@ C: \ c o de  folder \ data> cd . .
 
 ## Model Implementation ##
 
--**main.py**
+- **main.py**
 
 The main function in *main.py* contains the major logic of the code and can be run by
 
 $ python main.py --config configs/<name_of_config_file>.yaml
 
--**./models**
+- **./models**
 
 This folder contains different models to implement:
 
 1. *./models/twolayer.py*   (Two-Layer Network)
  
  The model is built with two fully connected layers and a sigmoid activation function in between the two layers. 
+ 
 2.*./models/cnn.py*  Vanilla Convolutional Neural Network. (CNN : Conv Layer--> ReLU--> MAX pooling --> FC layer)
  A model with a convolution layer, a ReLU activation, a max-pooling layer, followed by a fully connected layer for classification.  
  
@@ -57,9 +58,9 @@ This folder contains different models to implement:
 
 ## Imbalanced Dataset ##
 
--**./models/resnet.py.**
+- **./models/resnet.py.**
 
--**./losses/focal_loss.py**
+- **./losses/focal_loss.py**
 
 In practice, datasets are often not balanced. In this section, I explored the limitation of standard training strategy on this type of dataset using unbalanced version of CIFAR-10.
 Class-Balanced Focal Loss was implemented as one solution to the imabalnce problem.
