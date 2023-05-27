@@ -43,14 +43,14 @@ $ python main.py --config configs/<name_of_config_file>.yaml
 
 This folder contains different models to implement:
 
-1. *./models/twolayer.py*   (Two-Layer Network)
+- 1. *./models/twolayer.py*   (Two-Layer Network)
  
  The model is built with two fully connected layers and a sigmoid activation function in between the two layers. 
  
-2.*./models/cnn.py*  Vanilla Convolutional Neural Network. (CNN : Conv Layer--> ReLU--> MAX pooling --> FC layer)
+- 2.*./models/cnn.py*  Vanilla Convolutional Neural Network. (CNN : Conv Layer--> ReLU--> MAX pooling --> FC layer)
  A model with a convolution layer, a ReLU activation, a max-pooling layer, followed by a fully connected layer for classification.  
  
-3. *./models/my_model.py*
+- 3. *./models/my_model.py*
 
  (Conv Layer--> ReLU--> MAX pooling) -->(Conv Layer--> ReLU--> MAX pooling) --> (Conv Layer--> ReLU--> MAX pooling)
  (Conv Layer--> ReLU--> MAX pooling) --> (FC layer --> ReLU)--> dropout --> (FC layer --> ReLU) --> (FC layer --> ReLU)
