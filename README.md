@@ -44,9 +44,11 @@ $ python main.py --config configs/<name_of_config_file>.yaml
 This folder contains different models to implement:
 
 1. *./models/twolayer.py*   (Two-Layer Network)
+ 
  The model is built with two fully connected layers and a sigmoid activation function in between the two layers. 
 2.*./models/cnn.py*  Vanilla Convolutional Neural Network. (CNN : Conv Layer--> ReLU--> MAX pooling --> FC layer)
  A model with a convolution layer, a ReLU activation, a max-pooling layer, followed by a fully connected layer for classification.  
+ 
 3. *./models/my_model.py*
 
  (Conv Layer--> ReLU--> MAX pooling) -->(Conv Layer--> ReLU--> MAX pooling) --> (Conv Layer--> ReLU--> MAX pooling)
@@ -57,6 +59,7 @@ This folder contains different models to implement:
 
 -**./models/resnet.py.**
 -**./losses/focal_loss.py**
+
 In practice, datasets are often not balanced. In this section, I explored the limitation of standard training strategy on this type of dataset using unbalanced version of CIFAR-10.
 Class-Balanced Focal Loss was implemented as one solution to the imabalnce problem.
 These papers have been used for implementation of focal loss: https://arxiv.org/pdf/1901.05555.pdf, https://arxiv.org/abs/1708.02002
