@@ -58,6 +58,7 @@ This folder contains different models to implement:
 ## Imbalanced Dataset ##
 
 -**./models/resnet.py.**
+
 -**./losses/focal_loss.py**
 
 In practice, datasets are often not balanced. In this section, I explored the limitation of standard training strategy on this type of dataset using unbalanced version of CIFAR-10.
